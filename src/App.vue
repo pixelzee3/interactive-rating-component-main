@@ -1,5 +1,14 @@
+<script setup>
+  import Container from './components/Container.vue';
+</script>
+
 <template>
-  <div>
-    <h1 class="text-2xl">Hello World</h1>
+  <div class="bg-darker-blue">
+    <Container>
+      <img src="./assets/icon-star.svg" alt="">
+    </Container>
+    <Container>
+      1
+    </Container>
   </div>
 </template>
