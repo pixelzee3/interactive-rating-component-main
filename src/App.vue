@@ -24,11 +24,7 @@ import Button from './components/Button.vue';
         </Description>
       </div>
       <div class="mt-6 flex justify-between">
-        <Container> 1 </Container>
-        <Container> 2 </Container>
-        <Container> 3 </Container>
-        <Container> 4 </Container>
-        <Container> 5 </Container>
+        <Container v-for="n in 5"> {{ n }} </Container>
       </div>
       <div class="mt-6">
         <Button>Submit</Button>
