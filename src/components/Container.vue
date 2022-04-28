@@ -1,6 +1,6 @@
 <template>
   <div
-    class="flex aspect-square w-8 items-center justify-center rounded-full bg-dark-blue text-grey"
+    class="flex aspect-square w-10 items-center justify-center rounded-full bg-dark-blue text-center text-xs text-grey"
   >
     <slot />
   </div>
