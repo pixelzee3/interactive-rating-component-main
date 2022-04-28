@@ -13,12 +13,22 @@ import Card from './components/Card.vue';
       <Container>
         <img src="./assets/icon-star.svg" alt="" />
       </Container>
-      <Header>How did we do?</Header>
-      <Description>
-        Please let us know how we did with your support request. All feedback is
-        appreciated to help us improve our offering!
-      </Description>
-      <Container> 1 </Container>
+      <div class="mt-4">
+        <Header>How did we do?</Header>
+      </div>
+      <div class="mt-2">
+        <Description>
+          Please let us know how we did with your support request. All feedback is
+          appreciated to help us improve our offering!
+        </Description>
+      </div>
+      <div class="flex justify-between mt-6">
+        <Container> 1 </Container>
+        <Container> 2 </Container>
+        <Container> 3 </Container>
+        <Container> 4 </Container>
+        <Container> 5 </Container>
+      </div>
     </Card>
   </div>
 </template>
