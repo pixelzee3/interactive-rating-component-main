@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-darker-blue w-full rounded-xl p-6">
+  <div class="w-full max-w-xs rounded-xl bg-darker-blue p-6 md:rounded-3xl">
     <slot />
   </div>
 </template>
