@@ -4,6 +4,14 @@ const props = defineProps({
     type: Boolean,
     default: false,
   },
+  name: {
+    type: String,
+    default: null,
+  },
+  value: {
+    type: String,
+    default: null,
+  },
 });
 </script>
 
@@ -16,6 +24,7 @@ const props = defineProps({
       'hover:text-white': clickable,
       'active:bg-primary': clickable,
     }"
+    @click="$emit(`container-${props.name}`, props.value)"
   >
     <slot />
   </div>
