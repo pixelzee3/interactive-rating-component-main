@@ -4,6 +4,13 @@ import Header from './components/Header.vue';
 import Description from './components/Description.vue';
 import Card from './components/Card.vue';
 import Button from './components/Button.vue';
+import { ref } from 'vue';
+
+const rating = ref(null);
+
+function onClick(value) {
+  rating.value = value;
+}
 </script>
 
 <template>
@@ -24,7 +31,12 @@ import Button from './components/Button.vue';
         </Description>
       </div>
       <div class="mt-6 flex justify-between">
-        <Container v-for="n in 5" clickable name="rating" :value="n.toString()">
+        <Container
+          v-for="n in 5"
+          clickable
+          :value="n"
+          @click="onClick"
+        >
           {{ n }}
         </Container>
       </div>
